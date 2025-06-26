@@ -5,8 +5,11 @@ import { useEffect, useState } from "react";
 import CategorySelect from "@/components/CategorySelect";
 import DifficultySelect from "@/components/DifficultySelect";
 import AmountCounter from "@/components/AmountCounter";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  
   const [Settings, setSettings] = useState({
     category: '',
     difficulty: 'medium',
@@ -41,6 +44,15 @@ export default function Home() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Settings submitted:", Settings);
+    // opretter params via web apiet
+    const params = new URLSearchParams({
+      amount: Settings.amount,
+      difficulty: Settings.difficulty,
+      type: Settings.type,
+      ...(Settings.category && { category: Settings.category })
+    }).toString();
+    
+    router.push(`/quiz?${params}`);
   }
 
 
