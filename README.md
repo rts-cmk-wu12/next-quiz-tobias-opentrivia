@@ -4,32 +4,32 @@
 Du skal bygge en interaktiv quiz-applikation, hvor brugeren kan vælge kategori og sværhedsgrad, og derefter besvare spørgsmål hentet fra Open Trivia Database API.
 
 ## Teknologier
-- Next.js (React-baseret framework) ✓
-- Tailwind CSS (til styling) ✓
-- Open Trivia Database API (https://opentdb.com/api_config.php) ✓
+- Next.js (React-baseret framework) 
+- Tailwind CSS (til styling) 
+- Open Trivia Database API (https://opentdb.com/api_config.php) 
 
 ## Krav til funktionalitet
 
 1. **Startside**
-   - Velkomstbesked og kort introduktion til quizzen. ✓
+   - Velkomstbesked og kort introduktion til quizzen. 
    - Mulighed for at vælge:
-     - Kategori (f.eks. sport, historie, film) ✓
-     - Sværhedsgrad (easy, medium, hard) ✓
-     - Antal spørgsmål ✓
+     - Kategori (f.eks. sport, historie, film) 
+     - Sværhedsgrad (easy, medium, hard) 
+     - Antal spørgsmål 
 
 2. **Quiz-side**
-   - Hent spørgsmål fra Open Trivia API baseret på brugerens valg. ✗
-   - Vis ét spørgsmål ad gangen med 4 svarmuligheder. ✗
-   - Brugeren kan vælge et svar og gå videre til næste spørgsmål. ✗
+   - Hent spørgsmål fra Open Trivia API baseret på brugerens valg. 
+   - Vis ét spørgsmål ad gangen med 4 svarmuligheder. 
+   - Brugeren kan vælge et svar og gå videre til næste spørgsmål. 
 
 3. **Resultatside**
-   - Vis antal rigtige svar. ✗
-   - Mulighed for at starte en ny quiz. ✗
+   - Vis antal rigtige svar. 
+   - Mulighed for at starte en ny quiz.
 
 ## Designkrav
-- Brug Tailwind til at lave et simpelt, responsivt og brugervenligt design. ✓
-- Brug farver og ikoner til at gøre quizzen mere engagerende. ✗
-- Giv visuel feedback på rigtige og forkerte svar. ✗
+- Brug Tailwind til at lave et simpelt, responsivt og brugervenligt design. 
+- Brug farver og ikoner til at gøre quizzen mere engagerende. 
+- Giv visuel feedback på rigtige og forkerte svar. 
 
 ## Ekstra udfordringer (valgfrit)
 - Tilføj en timer til hvert spørgsmål.
